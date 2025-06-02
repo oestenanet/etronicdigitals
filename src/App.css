@@ -1,0 +1,36 @@
+/* Garante que o container ocupe 100% da tela */
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Estilo do Navbar fixo no topo */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* Cor do fundo */
+  color: white;
+  padding: 10px;
+  transition: opacity 0.3s ease; /* Transição para desvanecer */
+  z-index: 1000; /* Garante que o Navbar fique acima de outros elementos */
+}
+
+/* Estilo do conteúdo abaixo do Navbar */
+.content {
+  /* Para não sobrepor o conteúdo ao Navbar */
+  /* Estilo do conteúdo, se necessário */
+}
+
+/* Classe de desvanecimento */
+.navbar.hidden {
+  opacity: 0;
+}
+
+body {
+  margin: 0px;
+  font-family: Roboto, sans-serif;
+}
