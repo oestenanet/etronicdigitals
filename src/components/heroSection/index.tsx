@@ -1,5 +1,4 @@
-// src/components/HeroSection.tsx
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
@@ -9,13 +8,26 @@ const HeroContainer = styled.section`
   overflow: hidden;
 `;
 
-const BackgroundVideo = styled.video`
+const BackgroundMedia = styled.div`
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+`;
+
+const BackgroundVideo = styled.video<{ isVisible: boolean }>`
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  display: ${({ isVisible }) => (isVisible ? "block" : "none")};
+`;
+
+const FallbackImage = styled.img<{ isVisible: boolean }>`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: ${({ isVisible }) => (isVisible ? "block" : "none")};
 `;
 
 const Overlay = styled.div`
@@ -57,16 +69,27 @@ const CTAButton = styled(motion.a)`
 `;
 
 const HeroSection: React.FC = () => {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
   return (
     <HeroContainer>
-      <BackgroundVideo autoPlay muted loop playsInline>
-        <source src="/13650374_3840_2160_30fps.mp4" type="video/mp4" />
-        {/* Imagem de fallback para navegadores que não suportam vídeo */}
-        <img
+      <BackgroundMedia>
+        <BackgroundVideo
+          isVisible={videoLoaded}
+          autoPlay
+          muted
+          loop
+          playsInline
+          onCanPlayThrough={() => setVideoLoaded(true)}
+        >
+          <source src="/13650374_3840_2160_30fps.mp4" type="video/mp4" />
+        </BackgroundVideo>
+        <FallbackImage
+          isVisible={!videoLoaded}
           src="/pexels-andres-figueroa-3326883-32046545.jpg"
           alt="Imagem de fundo"
         />
-      </BackgroundVideo>
+      </BackgroundMedia>
       <Overlay>
         <Title
           initial={{ opacity: 0, y: -50 }}

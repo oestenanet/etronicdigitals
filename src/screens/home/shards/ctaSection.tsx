@@ -29,7 +29,7 @@ export const CTASection = () => (
         "&:hover": { backgroundColor: "#111" },
       }}
     >
-      Fale Conosco
+      Fale connosco
     </Button>
   </Box>
 );

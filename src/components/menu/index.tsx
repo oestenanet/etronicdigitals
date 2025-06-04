@@ -125,7 +125,7 @@ const Navbar = () => {
                   onClose={toggleDrawer(false)}
                 >
                   <Box
-                    sx={{ width: 250 }}
+                    sx={{ width: 250, backgroundColor: "#0d0d0d" }}
                     role="presentation"
                     onClick={toggleDrawer(false)}
                   >
@@ -135,6 +135,7 @@ const Navbar = () => {
                           key={text.id}
                           component={Link}
                           to={`/${text.id}`}
+                          style={{ color: "#fff" }}
                         >
                           <ListItemText primary={text.name} />
                         </ListItem>
