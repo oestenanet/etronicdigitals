@@ -18,7 +18,7 @@ const FloatingButtons: React.FC = () => {
     >
       {/* Botão WhatsApp */}
       <Link
-        to="https://api.whatsapp.com/send/?phone=%2B351932141109&text&type=phone_number&app_absent=0" // Substitua pelo seu número do WhatsApp
+        to="https://api.whatsapp.com/send/?phone=%2B351932141109&text&type=phone_number&app_absent=0" // Substitua pelo teu número do WhatsApp
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -40,7 +40,7 @@ const FloatingButtons: React.FC = () => {
 
       {/* Botão Instagram */}
       {/* <Link
-        to="https://www.instagram.com/obarbeirosoueu" // Substitua pelo seu link do Instagram
+        to="https://www.instagram.com/obarbeirosoueu" // Substitua pelo teu link do Instagram
         target="_blank"
         rel="noopener noreferrer"
       >

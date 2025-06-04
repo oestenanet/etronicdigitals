@@ -43,6 +43,8 @@ const Overlay = styled.div`
   align-items: center;
   text-align: center;
   color: #fff;
+  padding: 0 16px; // ← esta linha adiciona espaçamento lateral
+  box-sizing: border-box; // ← importante para garantir que padding não estoura o layout
 `;
 
 const Title = styled(motion.h1)`
@@ -115,7 +117,7 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 1, delay: 0.5 }}
         >
           Desenvolvimento de websites e gestão de redes sociais para impulsionar
-          o seu negócio.
+          o teu negócio.
         </Subtitle>
         <CTAButton
           target="_blank"
@@ -124,7 +126,7 @@ const HeroSection: React.FC = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          Fale Connosco
+          Fala Connosco
         </CTAButton>
       </Overlay>
     </HeroContainer>

@@ -10,10 +10,12 @@ import FloatingButtons from "./components/floatingButtons";
 import ServicesPage from "./screens/services";
 import { ContactSection } from "./screens/contact";
 import PortfolioPage from "./screens/portfolio";
+import Loader from "./components/loader";
 
 function App() {
   return (
     <div className="container">
+      <Loader />
       <Navbar />
       <div className="content">
         <Routes>

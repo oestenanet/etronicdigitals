@@ -14,7 +14,7 @@ const projects = [
   {
     title: "Apps na área da banca",
     description:
-      "Desenvolvimento de aplicações web, numa grande empresa Portuguesa na área da banca (tendo obrigatoriedade na descrição), é onde atuamos mais no momento, na criação de novas funcionalidades e correção de bugs.",
+      "Desenvolvimento de aplicações web, numa grande empresa Portuguesa na área da banca (tendo obrigatoriedade na descrição), é onde atuamos mais no momento, na criação de novas funcionalidades e correção de bugs em aplicações móveis.",
     image:
       "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     fullWidth: true,
@@ -22,14 +22,14 @@ const projects = [
   {
     title: "BMW Configurator",
     description:
-      "Participação no projeto Alemão BMW, onde participamos ativamente no desenvolvimento de novas features no seu configurador e correção de bugs.",
+      "Participação no projeto Alemão BMW, onde participamos ativamente no desenvolvimento de novas features no seu configurador automóvel e correção de bugs.",
     image:
       "https://www.bmw.pt/content/dam/bmw/common/images/logo-icons/BMW/BMW_Grey-Colour_RGB.SVG.asset.1697707041685.SVG",
   },
   {
     title: "Doce Algodão",
     description:
-      "Gestão das redes sociais e marketing (publicidade meta para Instagram e Facebook) para uma loja de roupa para bebés.",
+      "Gestão das redes sociais e marketing (publicidade meta para Instagram e Facebook) para uma loja de roupa. Criação da imagem da loja (Logotipo, branding) e do respetivo website.",
     image: "/464476786_565466949293360_1150025095639299327_n.jpeg",
   },
   //   {
@@ -42,13 +42,14 @@ const projects = [
   {
     title: "Airtrain",
     description:
-      "Criação de aplicação web para uma startup Alemã, onde consiste numa app de e-learning.",
+      "Desenvolvimento de toda a arquitectura e frontend de uma aplicação Web e Mobile na área do e-learning. Integração de funcionalidades com terceiros, como a google, whereby, zoom, plataformas de gestão, etc.",
     image:
       "https://static.wixstatic.com/media/788e63_b78166479bad40f08a271e469d88dd90~mv2.png/v1/fill/w_158,h_32,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Frame%2033590.png",
   },
   {
     title: "protendas.pt",
-    description: "Produção e aluguer de material para eventos.",
+    description:
+      "Desenvolvimento do website de uma organizadora de eventos. Um site informativo onde mostra todos os seus serviços, com uma secção de contactos integrado com a plataforma de emails do cliente.",
     image:
       "https://protendas.pt/static/media/logoReload.86737e399c8da7fc30da.png",
     whiteLogo: true,

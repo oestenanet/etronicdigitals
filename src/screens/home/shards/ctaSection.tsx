@@ -12,7 +12,7 @@ export const CTASection = () => (
     }}
   >
     <Typography variant="h4" fontWeight={700} gutterBottom>
-      Pronto para elevar o seu negócio?
+      Pronto para elevar o teu negócio?
     </Typography>
     <Typography variant="body1" mb={4}>
       Descubra como as nossas soluções tecnológicas podem impulsionar os seus
@@ -29,7 +29,7 @@ export const CTASection = () => (
         "&:hover": { backgroundColor: "#111" },
       }}
     >
-      Fale connosco
+      Fala connosco
     </Button>
   </Box>
 );
