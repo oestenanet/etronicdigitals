@@ -51,8 +51,8 @@ const Loader: React.FC = () => {
               fontSize: "2.5rem",
               letterSpacing: "3px",
               textTransform: "uppercase",
-              marginLeft: "auto",
-              marginRight: "auto",
+              marginLeft: "10px",
+              marginRight: "10px",
               textAlign: "center",
               marginBottom: "1rem",
             }}
