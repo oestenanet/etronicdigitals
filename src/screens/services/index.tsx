@@ -39,7 +39,7 @@ const ServicesPage = () => {
     <Box>
       <Box sx={{ position: "relative", height: "350px", overflow: "hidden" }}>
         <img
-          src="/pexels-divinetechygirl-1181675.jpg"
+          src="https://mf7n7up5egdpkbzf.public.blob.vercel-storage.com/pexels-divinetechygirl-1181675-4oQJdIgcPYLg7zIk24q4ajfgPLFZHI.jpg"
           alt="Imagem de fundo"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
