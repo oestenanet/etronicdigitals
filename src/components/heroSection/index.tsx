@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
@@ -71,6 +71,12 @@ const CTAButton = styled(motion.a)`
 const HeroSection: React.FC = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setVideoLoaded(true);
+    }, 5000);
+  }, []);
+
   return (
     <HeroContainer>
       <BackgroundMedia>
@@ -80,8 +86,8 @@ const HeroSection: React.FC = () => {
           muted
           loop
           playsInline
-          preload="auto" // ou "none" para não pré-carregar
-          poster="/pexels-andres-figueroa-3326883-32046545.jpg"
+          preload="none" // ou "none" para não pré-carregar
+          poster="/pexels-andres-figueroa-3326883-32046545.png"
           onCanPlayThrough={() => setVideoLoaded(true)}
         >
           <source src="/13650374_3840_2160_30fps.mp4" type="video/mp4" />
