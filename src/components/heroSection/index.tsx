@@ -90,7 +90,10 @@ const HeroSection: React.FC = () => {
           poster="/pexels-andres-figueroa-3326883-32046545.png"
           onCanPlayThrough={() => setVideoLoaded(true)}
         >
-          <source src="/13650374_3840_2160_30fps.mp4" type="video/mp4" />
+          <source
+            src="https://mf7n7up5egdpkbzf.public.blob.vercel-storage.com/13650374_3840_2160_30fps-biaLNDvanJvqiioUvNYZmAj3eTFqj1.mp4"
+            type="video/mp4"
+          />
         </BackgroundVideo>
         <FallbackImage
           isVisible={!videoLoaded}
