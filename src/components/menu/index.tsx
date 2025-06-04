@@ -125,7 +125,11 @@ const Navbar = () => {
                   onClose={toggleDrawer(false)}
                 >
                   <Box
-                    sx={{ width: 250, backgroundColor: "#0d0d0d" }}
+                    sx={{
+                      width: 250,
+                      backgroundColor: "#0d0d0d",
+                      height: "100%",
+                    }}
                     role="presentation"
                     onClick={toggleDrawer(false)}
                   >

@@ -80,6 +80,8 @@ const HeroSection: React.FC = () => {
           muted
           loop
           playsInline
+          preload="auto" // ou "none" para não pré-carregar
+          poster="/pexels-andres-figueroa-3326883-32046545.jpg"
           onCanPlayThrough={() => setVideoLoaded(true)}
         >
           <source src="/13650374_3840_2160_30fps.mp4" type="video/mp4" />
